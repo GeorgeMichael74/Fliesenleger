@@ -1,0 +1,169 @@
+nav {
+   width: 100%;
+   padding: 4px 70px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 10;
+}
+
+/* .activ {
+   background: #333;
+   color: rgb(255, 255, 255);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   padding: 15px 5%;
+   z-index: 10;
+} */
+
+.logo,
+.active img {
+   width: 120px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 1px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 0.4rem 0.4rem;
+}
+
+nav ul li:hover
+ {
+    font-weight: 600;
+    /* opacity: 2; */
+    background: black;
+    border-radius: 8px;
+    padding: 8px 6px;
+}
+nav ul li .active {
+    padding: 8px;
+    border-radius: 8px;
+    background: black;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.nav-connect {
+   padding: 10px 20px;
+   border-radius: 50px;
+   background: linear-gradient(267deg, #da7c25 0.36%, #b923e1);
+   font-size: 20px;
+   cursor: pointer;
+}
+.nav-connect:hover {
+   transform: scale(1.05);
+}
+
+.navbar .btn {
+    /* color: #fff; */
+    border-radius: 4px;
+    padding: 4px 10px 4px 10px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 16px;
+    display: inline-block;
+    border: 2px solid #ffc451;
+}
+
+.btn:hover {
+   background-color: transparent;
+   color: #fff;
+   border: 2px solid var(--primarColor);
+   box-shadow: 0 0 0.3rem var(--lightColor);
+}
+
+.btn img {
+   width: 18px;
+   margin-left: 8px;
+}
+/* navbar change color */
+.dark-nav {
+   background: #c16508;
+   transition: 0.5s;
+}
+
+
+/* ======== media Query =========== */
+
+@media (max-width: 1000px) {
+    nav ul li {
+        margin: 5px 15px;
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+@media (max-width: 840px){
+    nav {
+        padding: 8px 25px;
+    }
+    nav ul {
+        /* position: fixed; */
+        position: absolute;
+        top: 68px;
+        right: 0;
+        bottom: 0;
+        background: #c16508;
+        z-index: -1;
+        width: 200px;
+        height: 30vh;
+        padding-top: 25px;
+        transition: 0.6s;
+    }
+    .nav-item {
+        display: block;
+        margin: 20px 30px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .nav-item:hover{
+        color: white;
+        padding: 1px 1px;
+        border-radius: 6px;
+    }
+    .nav-item .active {
+        padding: 5px;
+        border-radius: 6px;
+        border: 2px solid black;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        right: -200px;
+    }
+    .navbar .btn {
+        padding: 3px 7px 3px 7px;
+    }
+    .contact-col h3 {
+        font-size: 20px;
+    }
+    .title h2 {
+        text-transform: none;
+        font-size: 3px;
+        margin-top: 5px;
+    }
+}

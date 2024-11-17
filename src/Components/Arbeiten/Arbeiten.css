@@ -1,0 +1,170 @@
+/* ========================
+ table of contents
+===========================
+1. Left Section ==> Buttons
+2. Right Section ==> Card
+3- Responsive Design (media query)*/
+/* main {background: var(--thirdColor);} */
+
+main.flex {
+    margin: 70px auto;
+    width: 90%;
+    /* max-height: 100vh; */
+    gap: 2.2rem;
+    display: flex;
+    align-items: start;
+    /* overflow:hidden; */
+}
+
+/* ===============================
+   1. Left Section ==> Buttons
+================================== */
+main section.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main .left-section button {
+    /* background-color: rgb(53, 54, 67); */
+    padding: 0.7rem 0;
+    width: 11rem;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    opacity: 0.5;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: #c16508;
+}
+
+main .left-section button.active {
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0.8rem 0;
+    border: 1px solid var(--blue);
+}
+
+.light main .left-section button.active {
+    border: 1px solid #000;
+}
+
+main .left-section button:hover {
+    opacity: 1;
+}
+
+
+/* ===============================
+   2. Right Section ==> Card
+================================== */
+.right-section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 2rem;
+}
+
+.card {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2),-1px 1px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--light-blue);
+    border-radius: 5px;
+    transition: 0.3s;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.05),
+        rgba(255,255,255, 0.05)
+        );
+        
+    }
+    
+    .light .card, .light .card:hover {border: none;}
+    
+    .card img {border-radius: 5px;}
+    
+    .card:hover{
+        border: 1px solid var(--blue);
+        /* background-color: rgba(248, 248, 248); */
+        rotate: 1deg;
+        scale: 1.01;
+        cursor: pointer;
+    }
+    
+    .box {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0.4rem;
+        
+    }
+    
+    .box .heading {
+        color: #c16508;
+        text-transform: capitalize;
+        margin: 0rem 0 1rem 0.5rem;
+    }
+    .box .sub-heading {
+        color: var(--subtitle);
+        font-size: 0.8rem;
+        margin: 0rem 0 1rem 0.5rem;
+    }
+    
+    .box .box-icons {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .box .box-link {
+        font-size: 1.2rem;
+        color: var(--subtitle);
+    }
+    
+    .box-icons:hover {
+        font-size: 1.25rem;
+        color: var(--icon-hover);
+        cursor: pointer;
+    }
+    
+    .box a {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        font-size: 0.9rem;
+        color: var(--blue);
+        margin-right: 15px;
+        
+    }
+    
+    
+    /* =====================================
+    3- Responsive Design (media query)
+    ======================================== */
+    @media (max-width: 600px){
+
+    }
+
+@media (max-width: 940px) {
+    main.flex {
+        flex-direction: column;
+        gap: 2.6rem;
+        align-items: center;
+    }
+
+    .left-section.flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .left-section.flex button {
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.8rem 0;
+        width: 7rem;
+        color: black;
+    }
+
+    .right-section {
+        flex-basis: 100%;
+    }
+}

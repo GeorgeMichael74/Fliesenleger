@@ -1,0 +1,25 @@
+.title {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 70px 0 30px;
+}
+
+.title h2 {
+    text-transform: none;
+    font-size: 32px;
+    margin-top: 5px;
+}
+.title p {
+    color: #c16508
+}
+
+/* ======== media Query =========== */
+
+@media (max-width: 1000px) {
+    .title h2 {
+        font-size: 22px;
+    }
+}

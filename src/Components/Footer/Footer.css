@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+    border-top: 1px solid #797979;
+    padding: 15px 0;
+
+}
+.footer ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* =====================================
+    3- Responsive Design (media query)
+   ===================================== */
+
+   @media (max-width: 700px) {
+    .footer {
+        display: block;
+        text-align: center;
+        font-size: 15px;
+        margin: 3px auto;
+        padding: 8px;
+    }
+    .footer ul {margin-top: 1px;}
+
+   }
