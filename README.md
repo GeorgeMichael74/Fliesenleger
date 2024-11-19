@@ -2,10 +2,23 @@
 
 coded by - [Girgis Michael]
 
+![](/fliesen.jpg)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Getting Started with Create React App
 
-Currently, two official plugins are available:
+This project was bootstrapped with React App using Vite and for Animation using Framer Motion
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Available scripts
+
+In the project directory, you can run:
+
+### npm run dev
+
+Run the app in development mode.
+
+open http://localhost:5173/ to view it in your browser.
+
+
+
+
+
