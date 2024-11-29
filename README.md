@@ -16,7 +16,7 @@ In the project directory, you can run:
 
 Run the app in development mode.
 
-open http://localhost:5173/ to view it in your browser.
+Open http://localhost:5173/ to view it in your browser.
 
 
 
