@@ -19,7 +19,7 @@ const Hero = ({setPlayState}) => {
                ein professioneller Fliesenleger Service von höchster Qualität.
             </p>
 
-            <div className="btn-container">
+            {/* <div className="btn-container">
                <button className="btn" onClick={() => {
                  setPlayState(true);
                }
@@ -27,7 +27,7 @@ const Hero = ({setPlayState}) => {
                   Über Uns {" "}{<IoPlayCircle  size={30} style={{color:"#c16508"}}/>}
                    
                </button>
-            </div>
+            </div> */}
                </div>
 
             <div className="animation">
