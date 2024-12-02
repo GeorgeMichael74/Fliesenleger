@@ -41,14 +41,14 @@ nav ul li:hover
  {
     font-weight: 600;
     /* opacity: 2; */
-    background: black;
     border-radius: 8px;
+    color: black;
     padding: 8px 6px;
 }
 nav ul li .active {
     padding: 8px;
     border-radius: 8px;
-    background: black;
+    /* background: black; */
 }
 
 .hamburger {
